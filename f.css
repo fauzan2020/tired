@@ -1,0 +1,338 @@
+/* CSS dasar */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://static.vecteezy.com/system/resources/previews/024/794/421/original/highly-detailed-blank-world-map-illustration-with-different-colors-for-each-country-editable-and-clearly-labeled-layers-vector.jpg);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    background-color: #f2f2f2;
+    z-index: 1000;
+}
+
+.header-banner {
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 70px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo-sekolah-penggerak {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header .logo-akreditasi-a {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+header .nama-logo {
+    font-size: 5vh;
+    font-weight: bold;
+    color: #4682b4;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #4682b4;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section {
+    padding: 160px 0;
+    border-bottom: 5px solid #f2f2f2;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f2f2f2;
+}
+
+.social-media img {
+    width: 100px;
+    height: auto;
+}
+
+.gallery-video {
+    width: calc(50% - 40px);
+    height: 200px;
+    border: 4px solid #f2f2f2;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    max-width: calc(50% - 40px);
+    max-height: 300px; /* Adjust as necessary */
+    border: 4px solid #f2f2f2; /* Smaller border size */
+    margin-bottom: 20px;
+    display: block;
+}
+
+iframe {
+    border: 20px solid #f2f2f2;
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.prestasi-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust as necessary */
+}
+
+.prestasi-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 150px;
+}
+
+.prestasi-column h2 {
+    font-size: 24px; /* Adjust as necessary */
+    margin-bottom: 20px;
+}
+
+.prestasi-column p {
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjust as necessary */
+}
+
+.biaya-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust as necessary */
+}
+
+.biaya-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+
+.biaya-column h2 {
+    font-size: 24px; /* Adjust as necessary */
+    margin-bottom: 20px;
+}
+
+.biaya-column p {
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjust as necessary */
+}
+
+/* Media Queries untuk perangkat mobile */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 5px; /* Padding yang lebih kecil */
+        justify-content: center; /* Pusatkan konten pada layar kecil */
+    }
+
+    .nama-logo {
+        font-size: 20px; /* Ukuran font yang lebih kecil */
+    }
+
+    nav ul {
+        flex-direction: column; /* Tampilkan menu secara vertikal */
+        align-items: center; /* Pusatkan menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ruang antara setiap menu */
+    }
+
+    .header .logo {
+        width: 70px; /* Ukuran logo yang lebih kecil */
+    }
+
+    .header .logo-sekolah-penggerak,
+    .header .logo-akreditasi-a {
+        display: none; /* Sembunyikan logo tambahan pada layar kecil */
+    }
+
+    /* Responsif konten */
+    .content h1 {
+        font-size: 30px; /* Ukuran font yang lebih kecil */
+        margin-bottom: 30px; /* Ruang bawah yang lebih kecil */
+    }
+
+    .prestasi-column {
+        margin-left: 0; /* Hilangkan margin kiri pada kolom prestasi */
+    }
+
+    .biaya-column {
+        margin-left: 0; /* Hilangkan margin kiri pada kolom biaya */
+    }
+
+    .prestasi-container,
+    .biaya-container {
+        flex-direction: column; /* Tampilkan konten dalam satu kolom */
+    }
+
+    .gallery-video,
+    .gallery-img {
+        width: 100%; /* Gambar dan video mengisi lebar penuh */
+        max-width: none; /* Hapus batasan maksimum lebar */
+    }
+
+    iframe {
+        width: 100%; /* Video iframe mengisi lebar penuh */
+        max-width: 100%; /* Hapus batasan maksimum lebar */
+        height: auto; /* Tinggi sesuai proporsi */
+        margin: 20px 0; /* Ruang atas dan bawah */
+    }
+}
+
+/* Media Queries untuk perangkat laptop */
+@media (min-width: 769px) {
+    .header-content {
+        padding: 10px 20px; /* Padding normal */
+        justify-content: space-between; /* Kembali ke tata letak asli */
+    }
+
+    nav ul {
+        flex-direction: row; /* Tampilkan menu secara horizontal */
+        align-items: center; /* Pusatkan menu */
+    }
+
+    .header .logo-sekolah-penggerak,
+    .header .logo-akreditasi-a {
+        display: inline-block; /* Tampilkan kembali logo tambahan */
+    }
+
+    .content h1 {
+        font-size: 50px; /* Ukuran font normal */
+        margin-bottom: 50px; /* Ruang bawah normal */
+    }
+
+    .prestasi-column {
+        margin-left: 150px; /* Kembalikan margin kiri pada kolom prestasi */
+    }
+
+    .biaya-column {
+        margin-left: 100px; /* Kembalikan margin kiri pada kolom biaya */
+    }
+
+    .prestasi-container,
+    .biaya-container {
+        flex-direction: row; /* Tampilkan konten dalam dua kolom */
+    }
+
+    .gallery-video,
+    .gallery-img {
+        width: calc(50% - 40px); /* Kembalikan lebar setengah dari tata letak */
+        max-width: none; /* Hapus batasan maksimum lebar */
+    }
+
+    iframe {
+        width: 1000px; /* Lebar iframe sesuai kebutuhan laptop */
+        max-width: 100%; /* Hapus batasan maksimum lebar */
+        height: 600px; /* Tetapkan tinggi iframe */
+        margin: 0 auto; /* Pusatkan iframe */
+    }
+
+    .prestasi-container,
+    .biaya-container {
+        max-width: 1200px; /* Tetapkan lebar maksimum kontainer */
+    }
+
+    .prestasi-column {
+        margin-left: 150px; /* Kembalikan margin kiri pada kolom prestasi */
+    }
+
+    .biaya-column {
+        margin-left: 100px; /* Kembalikan margin kiri pada kolom biaya */
+    }
+}
